@@ -1,0 +1,17 @@
+@media (max-width: 2400px){
+
+
+    .container{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .forweb{
+        display: none;
+        transition: 0.9s;
+    }
+
+}
+
+.icerik{
+    padding: 120px 5% 10% 5%;
+}

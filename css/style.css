@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Slab', serif;
+
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+.sayfa{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.yazi{
+    height: 70%;
+    background: white;
+}
+/*MENU THREE LINE - OPEN AND CLOSE */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 3px;
+    transition: 0.6s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.container{
+    position: fixed;
+    display: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 4px;
+    cursor: pointer;
+    background-color: rgb(20, 20, 20, 0.6);
+    border-radius: 5px;
+    z-index: 999999;
+}
+
+
+
+
+/*SIDE NAV BAR SECTION*/
+.forweb{
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 260px;
+    text-align: center;
+    font-size: 22px;
+    transition: 0.6s;
+    z-index: 999;
+    background: rgb(20, 20, 20);
+    overflow-x: hidden;
+    color: white;
+}
+.forweb .logo{
+    padding: 25px 10px 0 10px;
+}
+.forweb img{
+    border-radius: 100%; 
+    transition: 0.6s;
+}
+.forweb .logo img:hover{
+    transform: scale(1.10);
+    transition: 0.6s;
+}
+.forweb .logo p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.forweb .logo h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+.forweb .site-menu{
+    padding-top: 25px;
+}
+
+.forweb .site-menu li{
+    
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    padding: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    
+}
+.forweb .site-menu li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+    padding: 10px;
+    
+}
+
+.forweb .site-menu li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.6s;
+    border-style: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 26px;
+}
+.social-menu{
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+}
+.social-menu img{
+    border-radius: 20%;
+}
+
+.social-menu ul{
+    padding-left: 15px; 
+    z-index: 998;
+}
+
+
+.social-menu ul li{
+    float: left;
+    list-style: none;
+    transition: 0.6s;
+    margin: 10px 7px;
+}
+
+.social-menu ul li:hover{
+    transition: 0.6s;
+    transform: scale(1.75);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding-left: 120px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.icerik{
+    text-align: center;
+    padding: 120px 40px 10% 300px;
+}
+.icerik h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.icerik p{
+    font-size: 23px;
+    padding-bottom: 30px; 
+}
+.icerik a{
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 25px;
+    color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+.icerik a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    border-style: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 26px;
+}
+
+
+/*PROJECT SECTION - CARDS*/
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-card{
+    text-align: center;
+    background: rgb(0,0,0,0.8);
+    width: 320px;
+    height: 380px;
+    transition: 0.6s;
+    margin: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.project-card:hover{
+    transform: scale(1.13);
+    transition: 0.6s;
+    background: rgb(0,0,0);
+}
+.project-card a{
+    color: white;
+    font-weight: bold;
+}
+.project-card a:hover{
+    background-color: white;
+    color: black;
+}
+
+.project-card img{
+    width: 100%;
+    height: 170px;
+    padding-bottom: 10px;
+}
+
+/* BLOG SECTION*/
+
+/* BLOG - TOP NAV BAR */
+
+.topnavbar{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: rgb(20, 20, 20);
+    z-index: 998;
+}
+.topnavbar .blog-menu{
+    padding-left: 310px;
+    overflow: hidden;
+}
+.topnavbar .blog-menu ul{
+    line-height: 75px;
+}
+.topnavbar .blog-menu ul li{
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.topnavbar .blog-menu ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+.topnavbar .blog-menu ul li a:focus{
+    text-decoration: line-through;
+}
+.topnavbar .blog-menu ul li a:hover{
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+}
+
+.topnavbar .blog-dropdown{
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    z-index: 999;
+    color: white;
+    display: none;
+}
+.topnavbar .blog-dropdown .dropdown-button{
+    position: relative;
+    background: none;
+    color: white;
+    padding: 10px 15px 0 0;
+    border: none;
+    font-size: 30px;
+
+}
+.topnavbar .dropdown-content{
+    display: none;
+    background: rgb(20, 20, 20);
+    min-width: 200px;
+    overflow: inherit;
+    text-align: center;
+}
+.topnavbar .dropdown-content ul li{
+    list-style: none;
+    text-align: left;
+    padding: 10px 0 0 10px;
+}
+.topnavbar .dropdown-content ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.topnavbar .blog-dropdown:hover .dropdown-content{
+    display: block;
+}
+.topnavbar .dropdown-content ul li a:hover{
+    background: white;
+    color: black;
+}
+/*BLOG SECTION ARTICLES*/
+.blog-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.blog-cards .blog-articles{
+    text-align: left;
+    background: rgb(10,10,10,0.9);
+    width: 90%;
+    max-width: 1200px;
+    height: 350px;
+    transition: 0.6s;
+    margin: 10px;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+}
+.blog-cards .blog-articles:hover{
+    transform: scale(1.04);
+    transition: 0.6s;
+    background: rgb(20,20,20);
+}
+.blog-cards .blog-articles img{
+    height: 100%; 
+    float: right;
+}
+.blog-cards .blog-articles .summary{
+    padding: 20px;
+    height: 100%;
+}
+.blog-cards .blog-articles .summary h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.blog-cards .blog-articles .summary h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.blog-cards .blog-articles .summary p{
+    font-size: 20px;
+}
+
+.blog-cards .blog-articles .summary a{
+    color: white;
+    float: right;
+    border-style: none;
+    text-decoration: underline;
+}
+.blog-cards .blog-articles .summary a:hover{
+    border-style: none;
+    background: none;
+    border-radius: 0;
+    padding: 10px;
+    
+}
+
+
+
+/* -------ARTICLES-----   */
+.icerik .articles{
+    text-align: left;
+    font-size: 23px;
+    width: 80%;
+    padding-right: auto;
+    padding-left: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icerik .articles h2{
+    text-align: center;
+    font-size: 40px;
+}
+.icerik .articles h4{
+    text-align: center;
+}
+.icerik .articles p{
+    margin-top: 20px;
+}
+
+.icerik .articles a{
+    padding: 0;
+    text-decoration: underline;
+    font-size: 23px;
+    border: none;
+    font-weight: bold;
+}
+.icerik .articles a:hover{
+    background: none;
+    border: none;
+    color: black;
+    padding: 0;
+    font-size: 23px;
+}
+.icerik .articles img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.icerik .articles ul{
+    padding-left: 20px;
+    list-style: disc;
+
+}
+.icerik .articles ul li{
+    margin-bottom: 5px;
+}
+
+/* MOBILE OPTIMIZATION*/
+@media (max-width: 500px) { 
+    .icerik{
+        padding-left: 20px;
+    }
+    .icerik .contact-me input{
+        width: 50%;
+        min-width: 200px;
+    }
+    .icerik .contact-me textarea{
+        width: 50%;
+        min-width: 200px;
+    }
+
+    .icerik .contact-me textarea:focus{
+        width: 300px;
+    }
+
+    .container{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .forweb{
+        display: none;
+        transition: 0.9s;
+    }
+    .blog-cards .blog-articles{
+        height: 100%;
+    }
+
+    .blog-cards .blog-articles img{
+        float: none;
+        height: 10%;
+        width: 100%;
+    }
+}
+@media (max-width: 1279px){
+
+    /* BLOG'S TOP NAV BAR */
+    .blog-menu{
+        display: none;
+    }
+    .topnavbar .blog-dropdown{
+        display: block;
+    }
+    .blog-cards .blog-articles img{
+        float: none;
+        height: 10%;
+        width: 100%;
+    }
+    .blog-cards .blog-articles{
+        height: 100%;
+    }
+@media (max-width: 1025px){
+    
+}
+
+@media (max-width: 330px){
+    .blog-cards .blog-articles{
+        height: 500px;
+    }
+
+    .forweb .logo img{
+        display: none;
+    }
+}
